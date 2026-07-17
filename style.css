@@ -1,0 +1,60 @@
+body{
+    background-image: linear-gradient(to bottom right,
+    rgb(164,221,212),
+    #f19d9d);
+}
+
+.search{
+    border:2px solid white;
+    background:transparent;
+}
+
+.search::placeholder{
+    color: white;
+}
+
+.search:focus::placeholder{
+    color:#ed6161;
+}
+
+.search-btn{
+    background: transparent !important;
+}
+
+.nav-item a{
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.nav-item a:hover{
+    color: #ed6161;
+    font-weight: 400;
+}
+
+.btn-outline-primary{
+    border-width: 2px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: #ff8c8c;
+  --bs-btn-hover-bg:white;
+  --bs-btn-hover-border-color: #ff8c8c;
+  --bs-btn-focus-shadow-rgb: rgb(139,112,112);
+  --bs-btn-active-color: #ff8c8c;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: #ff8c8c;
+}
+
+.product-search{
+    background-image: linear-gradient(
+        rgba(4,9,30,0.7),
+        rgba(4,9,30,0.7)
+    ),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjh7A0mjlizcemzeTEoHPu514BqNAvmRQ3NsrPYSCSPg&s=10");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:7% 0;
+}
+
+
