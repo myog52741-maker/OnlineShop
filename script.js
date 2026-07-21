@@ -1,16 +1,41 @@
-function bubbleSort(arr){
-    let n = arr.length;
+let x=1;
+let y=2;
+let z=3;
 
-    for(let i=0;i<n-1;i++){
-        for(let j =0;j<n-i-1;j++){
-            if(arr[j] > arr[j+1]){
-            let tmp = arr[j];
-            arr[j] = arr[j+1];
-            arr[j+1] = tmp;
-            }
-        }
-    }
-    return arr;
+x=y;
+y=z;
+z=x;
+
+console.log(x,y,z); //2,3,2 9(ex.1)
+
+
+function grade(score){
+let ret;
+
+if(score >= 80){
+    ret = "D";
+}else if(score >= 50){
+    ret = "P";
+}else {
+    ret = "F";
+}
+return ret;
 }
 
-console.log(bubbleSort([4,1,2,9,2,0,7]));
+console.log(grade(32)); // (ec.2)
+
+
+let calLeapYear = (num) => {
+    let leapnum;
+    if(num%400==0){
+      leapnum= "It is leapyear";  
+      return leapnum;
+    }else if ((num%100 !=0) && (num%4==0)){
+      leapnum= "It is leapyear";  
+      return leapnum;
+    }else{
+       leapnum="It is not leapyear";
+      return leapnum;
+    }
+}
+console.log(calLeapYear(1));
